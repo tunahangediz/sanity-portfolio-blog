@@ -1,0 +1,128 @@
+.App {
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0 1px 1px 0 rgb(32 33 35 / 5%),
+        0 2px 1px -1px rgb(32 33 35 / 8%), 0 1px 3px 0 rgb(32 33 35 / 19%);
+    background-color: white;
+    width: 100%;
+    min-width: 300px;
+    max-width: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.card:hover {
+    border-color: #b4bcc7;
+    box-shadow: 0 8px 17px 2px rgb(32 33 35 / 5%),
+        0 3px 14px 2px rgb(32 33 35 / 8%), 0 5px 5px -3px rgb(32 33 35 / 19%);
+}
+.img-div {
+    background: #fff;
+    height: 300px;
+    border-bottom: 2px solid rgb(227, 221, 221);
+}
+.img-div img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+.card-body {
+    padding: 1.5rem 1rem 0rem 1rem;
+    height: 180px;
+
+    position: relative;
+}
+.preview {
+    overflow: hidden;
+    color: #697a90;
+    height: 80px;
+}
+
+.post-grid {
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+h3 {
+    font-weight: 600;
+}
+.read-more {
+    position: absolute;
+    bottom: 1rem;
+    font-weight: 600;
+    color: #697a90;
+}
+
+.card:hover .read-more {
+    color: #156dff;
+}
+.main-hero {
+    text-align: center;
+}
+.project {
+    max-width: 500px;
+    overflow: hidden;
+}
+.project img {
+    max-width: 500px;
+    height: 250px;
+    overflow: hidden;
+    width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+    .post-grid {
+        /* display: grid;
+        grid-template-columns: repeat(2, minmax(20em, 1fr));
+        grid-gap: 2rem;
+        justify-content: center; */
+        display: flex;
+        justify-content: flex-start;
+    }
+    .container {
+        width: 100%;
+        display: block;
+        padding: 0 10%;
+    }
+    .main-hero {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        text-align: left;
+    }
+
+    .projects-grid {
+        display: flex;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+}
