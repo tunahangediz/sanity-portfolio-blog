@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .App {
     height: 100vh;
 }
@@ -135,7 +140,8 @@ h3 {
     .container {
         width: 100%;
         display: block;
-        padding: 0 10%;
+        max-width: 1600px;
+        margin: 0 auto;
     }
     .main-hero {
         display: flex;
