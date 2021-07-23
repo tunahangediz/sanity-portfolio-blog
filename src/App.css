@@ -99,6 +99,29 @@ h3 {
     overflow: hidden;
     width: 100%;
 }
+.author {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: #697a90;
+    margin: 2rem 0;
+}
+
+.author img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.one-post {
+    max-width: 1300px;
+    display: block;
+    margin: 5rem auto;
+}
+.one-post p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
 
 @media screen and (min-width: 900px) {
     .post-grid {

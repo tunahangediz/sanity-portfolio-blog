@@ -40,10 +40,10 @@ export default function OnePost() {
     if (!postData) return <div>Loading...</div>;
 
     return (
-        <div>
+        <div className="one-post">
             <div>
                 <h2>{postData.title}</h2>
-                <div>
+                <div className="author">
                     <img
                         src={urlFor(postData.authorImage).width(100).url()}
                         alt="Author is Kap"
